@@ -5,13 +5,13 @@ so now some basic image editing or free generation is possible for experimentati
 
 ## script examples
 
-python projector_with_CLIP.py --ckpt stylegan2-ffhq-config-f.pt  --size 1024 --description "woman wearing glasses" --step 100 images/bae4_01.png --clip_reg 0.5 --percept_reg 0.0 --noise_reg 1e-5 --mse 0.4 --lr 0.01
-python projector_with_CLIP.py --ckpt stylegan2-ffhq-config-f.pt  --size 1024 --description "woman wearing glasses" --step 100 images/bae4_01.png --clip_reg 0.5 --percept_reg 0.5 --noise_reg 1e-5 --mse 0.5 --lr 0.01
+python projector_with_CLIP.py --ckpt stylegan2-ffhq-config-f.pt  --size 1024 --description "woman wearing glasses" --step 100 test.png --clip_reg 0.5 --percept_reg 0.0 --noise_reg 1e-5 --mse 0.4 --lr 0.01
+python projector_with_CLIP.py --ckpt stylegan2-ffhq-config-f.pt  --size 1024 --description "woman wearing glasses" --step 100 test.png --clip_reg 0.5 --percept_reg 0.5 --noise_reg 1e-5 --mse 0.5 --lr 0.01
 
 ## cars
 python projector_with_CLIP.py --ckpt stylegan2-car-config-f.pt  --size 1024 --description "White Lamborghini" --step 100 blue_bmw.jpg --clip_reg 0.4 --percept_reg 0.3 --noise_reg 1e-5 --mse 0. --lr 1e-1
 ## MetFaces
- python projector_with_CLIP.py --ckpt network-snapshot-metfaces2.pt  --size 1024 --description "Goth Mona Lisa" --step 100 hasun.jpg --clip_reg 0.5 --percept_reg 0.0 --noise_reg 1e-5 --mse 0. --lr 0.02
+ python projector_with_CLIP.py --ckpt network-snapshot-metfaces2.pt  --size 1024 --description "Goth Mona Lisa" --step 100 test.jpg --clip_reg 0.5 --percept_reg 0.0 --noise_reg 1e-5 --mse 0. --lr 0.02
 
 ## examples
 Check in videos folder . Also please watch my Youtube video explaining the whole process : https://www.youtube.com/watch?v=AKUjp9XOMmQ
