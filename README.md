@@ -3,15 +3,22 @@
 I included a basic CLIP based loss to existign projection codes
 so now some basic image editing or free generation is possible for experimentation with text prompts.
 
-script examples:
+## script examples
+
 python projector_with_CLIP.py --ckpt stylegan2-ffhq-config-f.pt  --size 1024 --description "woman wearing glasses" --step 100 images/bae4_01.png --clip_reg 0.5 --percept_reg 0.0 --noise_reg 1e-5 --mse 0.4 --lr 0.01
 python projector_with_CLIP.py --ckpt stylegan2-ffhq-config-f.pt  --size 1024 --description "woman wearing glasses" --step 100 images/bae4_01.png --clip_reg 0.5 --percept_reg 0.5 --noise_reg 1e-5 --mse 0.5 --lr 0.01
 
-# cars
+## cars
 python projector_with_CLIP.py --ckpt stylegan2-car-config-f.pt  --size 1024 --description "White Lamborghini" --step 100 blue_bmw.jpg --clip_reg 0.4 --percept_reg 0.3 --noise_reg 1e-5 --mse 0. --lr 1e-1
-# MetFaces
+## MetFaces
  python projector_with_CLIP.py --ckpt network-snapshot-metfaces2.pt  --size 1024 --description "Goth Mona Lisa" --step 100 hasun.jpg --clip_reg 0.5 --percept_reg 0.0 --noise_reg 1e-5 --mse 0. --lr 0.02
 
+## examples
+![](videos/blue_subaru_impreza_with_yellow_rims.mp4)
+![](videos/red_bmw_parked_on_street.mp4)
+![](videos/red_ford_mustang.mp4)
+![](videos/vladimir_putin_man.mp4)
+![](videos/girl_taylor_swift.mp4)
 
 ## Original repo README
 # StyleGAN 2 in PyTorch
