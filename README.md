@@ -14,11 +14,7 @@ python projector_with_CLIP.py --ckpt stylegan2-car-config-f.pt  --size 1024 --de
  python projector_with_CLIP.py --ckpt network-snapshot-metfaces2.pt  --size 1024 --description "Goth Mona Lisa" --step 100 hasun.jpg --clip_reg 0.5 --percept_reg 0.0 --noise_reg 1e-5 --mse 0. --lr 0.02
 
 ## examples
-![](videos/blue_subaru_impreza_with_yellow_rims.mp4)
-![](videos/red_bmw_parked_on_street.mp4)
-![](videos/red_ford_mustang.mp4)
-![](videos/vladimir_putin_man.mp4)
-![](videos/girl_taylor_swift.mp4)
+Check in videos folder
 
 ## Original repo README
 # StyleGAN 2 in PyTorch
